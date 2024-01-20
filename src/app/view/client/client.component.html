@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row my-3">
+    <div class="col-md-6">
+      <!-- You can add content or elements here if needed -->
+    </div>
+    <div class="col-md-8 text-right">
+      <!-- You can add content or elements here if needed -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6" *ngFor="let item of terrainModule">
+      <div class="card border-pink mb-3 mx-auto">
+        <div class="card-header text-center" style="background: rgb(63,94,251); background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); color: #FFFFFF; border-bottom: none;">
+          <span class="material-icons" style="vertical-align: middle;">landscape</span> {{item.categorie.type}}
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <strong>Nom :</strong> {{item.proprietaire.nom}}
+            </div>
+            <div class="col-6">
+              <strong>Prenom :</strong> {{item.proprietaire.prenom}}
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-12">
+              <strong>Type :</strong> {{item.categorie.type}}
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 text-center">
+              <!-- You can add buttons or actions here if needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
